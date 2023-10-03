@@ -5,3 +5,7 @@ parameters:
         - src
     parallel:
         maximumNumberOfProcesses: 1
+    ignoreErrors:
+        -
+            message: '%Method Zaphyr\\EventDispatcher\\ListenerProvider::getListenersForEvent\(\) return type has no value type specified in iterable type iterable.%'
+            path: 'src/ListenerProvider.php'
