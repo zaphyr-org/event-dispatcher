@@ -32,6 +32,8 @@ class ListenerProvider implements ListenerProviderInterface
     protected array $listeners = [];
 
     /**
+     * NOTE: This method is not part of the PSR-14 ListenerProviderInterface.
+     *
      * @param string   $eventName
      * @param callable $listener
      * @param int      $priority
