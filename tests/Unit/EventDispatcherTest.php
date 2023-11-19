@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Zaphyr\EventDispatcherTests;
+namespace Zaphyr\EventDispatcherTests\Unit;
 
 use Exception;
 use PHPUnit\Framework\TestCase;
@@ -82,7 +82,6 @@ class EventDispatcherTest extends TestCase
         (new EventDispatcher($listenerProvider))->dispatch(new TestEvent());
 
         $this->expectOutputString('Hello World' . PHP_EOL . 'Hello World' . PHP_EOL);
-
     }
 
     public function testDispatchCanThrowException(): void

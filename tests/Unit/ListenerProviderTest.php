@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Zaphyr\EventDispatcherTests;
+namespace Zaphyr\EventDispatcherTests\Unit;
 
 use PHPUnit\Framework\TestCase;
 use stdClass;
