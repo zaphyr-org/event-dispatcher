@@ -20,7 +20,7 @@ class ListenerProviderTest extends TestCase
         $this->listenerProvider = new ListenerProvider();
     }
 
-    public function tearDown(): void
+    protected function tearDown(): void
     {
         unset($this->listenerProvider);
     }

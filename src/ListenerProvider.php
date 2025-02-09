@@ -47,6 +47,8 @@ class ListenerProvider implements ListenerProviderInterface
 
     /**
      * {@inheritdoc}
+     *
+     * @return iterable<callable>
      */
     public function getListenersForEvent(object $event): iterable
     {
